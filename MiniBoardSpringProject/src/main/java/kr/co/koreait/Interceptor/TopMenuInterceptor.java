@@ -25,14 +25,16 @@ public class TopMenuInterceptor implements HandlerInterceptor {
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
-		public List<ContentBean>getTopMenuList() {
-			
-			List<ContentBean> topmenuList = TopMenuService.getTopMenuList();
-			request.setAttribute("topmenuList", topmenuList);
-			
-		return true;
-		
-		}
-	}
+		/*
+		 * public List<ContentBean>getTopMenuList() {
+		 * 
+		 * List<ContentBean> topmenuList = TopMenuService.getTopMenuList();
+		 * request.setAttribute("topmenuList", topmenuList);
+		 * 
+		 * 
+		 * 
+		 * }
+		 */
+	return true;}
 	
 }
